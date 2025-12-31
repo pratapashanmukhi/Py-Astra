@@ -32,24 +32,34 @@ It supports both **short answers** and **detailed explanations** based on user c
 - pyttsx3  
 - PyAudio
 ---
+
+## 📦 **Required Python Libraries**
+
+Install these using `pip`:
+
+- `google-generativeai`
+- `SpeechRecognition`
+- `pyttsx3`
+- `pyaudio`
+
 ## ⚙️ Installation & Setup
 ### ✅ Prerequisites
 Make sure you have the following installed:
 
 Python 3.8 or higher
 
-### 🌇Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/Py-Astra.git
 cd Py-Astra
  ```
-### ✅ Create Virtual Environment
+### 2. Create Virtual Environment
 ```bash
 python -m venv venv
   ```
 
-### ✅ Activate the Virtual Environment
+### 3. Activate the Virtual Environment
 
 Activate the virtual environment using the command below.
 Windows
@@ -61,7 +71,7 @@ Mac / Linux
 source venv/bin/activate
  ```
 
-### ✅ Install Dependencies
+### 4. Install Dependencies
 ```bash
 pip install -r requirements.txt
  ```
@@ -71,18 +81,22 @@ pip install google-generativeai speechrecognition pyttsx3 pyaudio
  ```
 * with your Google Generative AI API Key.
 
-### ▶️ How to Run the Project
+### 5. How to Run the Project
 ```bash
 python main.py
  ```
 
-### 4️⃣ API Configuration
+### 6. API Configuration
 * For API Key: Visit Google AI Studio to get your API key.
 Open main.py and replace:
 ```bash
 API_KEY = 'Your_api_key'
  ```
 * For Model: If you want to use a different model than the default (gemini-pro), you can:
+ ```bash
+model = ai.GenerativeModel("your-model-name")  # Replace the model name you have copied
+  ```    
+    
 * Visit the Google AI Studio to browse and select the model that best suits your needs.
 
 ### ⚠️ Note:
@@ -126,19 +140,14 @@ API_KEY = 'Your_api_key'
 ---
 
 ### 🧠 Code Structure
----
-Py Astra.py: Main script containing:
 
- * API configuration google-generativeai
+   *  `pytutor.py` : Main script containing:
+   *  API configuration `google-generativeai`
+   *  Voice input using `speech_recognition`
+   *  Voice output using `pyttsx3`
+   *  Gemini model prompt construction and interaction
+   *  Voice-based command loop
 
- * Voice input using speech_recognition
-
- * Voice output using pyttsx3
-
- * Gemini model prompt construction and interaction
- 
- * Voice-based command loop
- 
 ---
 
 ## 🤝 Contributing
@@ -149,6 +158,22 @@ Contributions are welcome! If you'd like to suggest improvements, report bugs, o
 
 ## 📬Contact
 * For queries or suggestions, please contact:  
-[pratapashanumukhi@gmail.com](mailto:pratapashanumukhi@gmail.com)
+   [Pratapa Shanmukhi](mailto:pratapashanumukhi@gmail.com)
+  
+- 🔗 **LinkedIn:**  [Pratapa Shanmukhi](https://www.linkedin.com/in/shanmukhi-pratapa-6a4484336)
+
+---
+## 🚀 **Future Enhancements**
+
+- Add GUI interface
+- Support multiple programming languages
+- Improve response accuracy with context memory
+  
+---
+
+⚠️ **Disclaimer**
+
+This project uses Google Generative AI. Make sure to follow their  
+[terms of services](https://policies.google.com/terms) when using the API.
 
 ---

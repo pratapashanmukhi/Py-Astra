@@ -109,20 +109,17 @@ model = ai.GenerativeModel("your-model-name")  # Replace the model name you have
 
 ---
 
-### 🧑‍💻 How Py Astra Works
+## 🧑‍💻 **How Py Astra Works**
 
-* Listens to the user’s voice input
-
-* Converts speech to text
-
-* Sends query to Gemini AI
-
-* Receives Python-based response
-
-* Converts text to speech and speaks back
+- Listens to the user’s voice input using the SpeechRecognition library.
+- Converts the spoken input into text.
+- Sends the user’s query along with a predefined prompt to Google Gemini AI.
+- Processes the response received from the AI model.
+- Converts the AI-generated text response into speech using pyttsx3.
+- Speaks the response back to the user in real time.
+- Continuously runs in a loop until the user says "exit".
 
 ---
-
 ### 🚀 Usage
 * Run the script:
  ```bash
